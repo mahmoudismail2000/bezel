@@ -1,0 +1,1036 @@
+:root{
+    --colorMain:#00C3DA;
+    --colorHover:#00D5EE;
+    
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family:'Poppins', sans-serif ;
+}
+* i{
+    cursor: pointer;
+}
+
+/* font-family: 'Poppins', sans-serif; */
+/* font-family: 'Source Sans 3', sans-serif; */
+
+
+/*                    Home                     */
+
+.home{
+    height: 100vh;
+}
+.home h1{
+    font-size: 100px;
+
+}
+.home h4{
+    font-size: 18px;
+}
+
+.home .caption .btn{
+    padding: 12px 30px;
+    margin-top: 20px;
+    font-weight: bold;
+}
+.home .backimg2::after , .home .backimg::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(31, 31, 31, 0.55);
+    top: 0;
+    left: 0;
+}
+.home .caption{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-100%);
+}
+.home .btn1{
+    width: 60px;
+    height: 60px;
+    border: 2px solid white;
+}
+.home .btn1::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    right:100%;
+    background-color:white;
+    transition: all .3s;
+}
+.home .btn1:hover::before{
+    right: 0;
+}
+.home .btn1:hover i{
+    color: gray;
+}
+
+.home .btnstyle{
+    background-color: var(--colorMain);
+    transition: all .3s;
+}
+
+.home .btnstyle:hover{
+    background-color: var(--colorHover);
+    transform: translate(0px,-1.5px);
+}
+.home .btnstyle1{
+    transition: all .5s;
+}
+.home .btnstyle1:hover{
+    background-color: white;
+    color: black !important;
+
+}
+
+.home .secondbtn{
+    position: absolute;
+    top: 80%;
+    left: 35%;
+    transform: translate(-50%,-50%);
+    display: flex;
+    align-items: center;
+}
+.home .secondbtn button{
+    padding: 0px 7px;
+    border: 0px;
+
+}
+.backimg{
+    background-image: url('../images/bg-image-29.jpg');
+    background-size: cover;
+    
+}
+.backimg2{
+    background-image: url('../images/bg-image-28.jpg');
+    background-size: cover;
+    
+}
+
+
+
+
+
+/*                       Navbar                          */
+
+.navbar{
+    padding: 0 !important;
+}
+.navbar .container{
+    width: 80%;
+}
+.navbar ul{
+    margin-right: 5%;
+
+}
+.navbar ul li{
+    padding: 0px 5px;
+
+}
+
+@media all and (max-width:992px){
+    .navbar .container .navicons{
+        display: none;
+
+    }
+}
+.navbar .navbar-brand{
+    font-size: 34px;
+    font-weight: bold;
+    position: relative;
+}
+.navbar .container .navbar-brand::after{
+    content: '';
+    position: absolute;
+    width: 7px;
+    height: 7px;
+    background-color:var(--colorMain);
+    border-radius: 50%;
+    bottom: 40%;
+    margin-left: 3px;
+    
+}
+.navbar{
+    border: 1px solid rgba(230, 216, 216, 0.5);
+}
+
+.navbar .navicons{
+    right: 10%;
+    border-left: 1px solid rgba(230, 216, 216, 0.5);
+
+
+}
+.navbar .ulstyle{
+    margin-right: 7%;
+}
+
+.navbar-toggler {
+    border: 0px;
+}
+.navbar .navbar-toggler-icon{
+    background-image: var(--colorHover);
+}
+
+.navbar-nav .nav-link.active, .navbar-nav .nav-link.show {
+    color: rgba(255, 255, 255, 0.55);
+}
+
+.navbar-dark, .navbar[data-bs-theme=dark] {
+    --bs-navbar-color:white;
+    
+}
+
+
+
+
+/*            Who Are You            */
+
+
+
+.who p{
+    font-size: 24px;
+    color: #787878;
+    font-weight: 200;
+    font-family:'Source Sans 3', sans-serif;
+}
+.who{
+    border-bottom: 2px solid rgba(233, 233, 233,.4);
+    margin-top: 100px !important;
+}
+.who .whocaption span::after{
+    content: '|';
+    color: var(--colorMain);
+    animation-name: whoanimation;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+.who .btn{
+    padding: 17px 35px;
+    font-size: 14px;
+    font-weight: 500;
+    transition: all .3s;
+}
+.who .btn:hover{
+    background-color: black;
+    color: white;
+}
+
+@keyframes whoanimation{
+    0%{
+        content: "w|";
+
+    }
+    2%{
+        content: "we|";
+    }
+    4%{
+        content: "web|";
+    }
+    6%{
+        content: "webs|";
+    }
+    8%{
+        content: "websi|";
+    }
+    10%{
+        content: "websit|";
+    }
+    12%{
+        content: "website|";
+    }
+    14%{
+        content: "websit|";
+    }
+    16%{
+        content: "websi|";
+    }
+    18%{
+        content: "webs|";
+    }
+    20%{
+        content: "web|";
+    }
+    22%{
+        content: "we|";
+    }
+    24%{
+        content: "w|";
+    }
+    26%{
+        content: "|";
+    }
+    28%{
+        content: "s|";
+    }
+    30%{
+        content: "so|";
+    }
+    32%{
+        content: "sof|";
+    }
+    34%{
+        content: "soft|";
+    }
+    36%{
+        content: "softw|";
+    }
+    38%{
+        content: "softwa|";
+    }
+
+    40%{
+        content: "softwar|";
+    }
+
+    42%{
+        content: "software|";
+    }
+    44%{
+        content: "softwares|";
+    }
+    46%{
+        content: "software|";
+    }
+
+    48%{
+        content: "softwar|";
+    }
+    50%{
+        content: "softwa|";
+    }
+
+    52%{
+        content: "softw|";
+    }
+
+    54%{
+        content: "soft|";
+    }
+
+    56%{
+        content: "sof|";
+    }
+    58%{
+        content: "so|";
+    }
+
+    60%{
+        content: "s|";
+    }
+
+    62%{
+        content: "a|";
+    }
+    64%{
+        content: "ap|";
+    }
+    66%{
+        content: "app|";
+    }
+    68%{
+        content: "apps|";
+    }
+    70%{
+        content: "app|";
+    }
+    72%{
+        content: "ap|";
+    }
+    74%{
+        content: "a|";
+    }
+    76%{
+        content: "|";
+    }
+
+}
+
+/*                  Team                    */
+
+.team{
+    margin-top: 170px !important;
+    margin-bottom: 170px !important;
+}
+.team .container{
+    width: 80%;
+}
+.team .image{
+    position: relative;
+}
+.team .image .imagestyle{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 10%;
+    left: 0;
+    color: white;
+    background-color:rgb(0, 213, 238);
+    opacity: 0;
+    transition: all .3s;
+
+}
+
+.team .teamcaption h2 , .cheap .cheapcaption h2{
+    font-size: 65px;
+    font-weight: 700;
+    color: #F2F2F2;
+
+}
+.team .teamcaption h3 , .cheap .cheapcaption h3{
+    font-size: 38px;
+    font-weight: 700;
+}
+
+.team .image:hover .imagestyle{
+    top: 0;
+    background-color:rgb(0, 213, 238,);
+    opacity: .9;
+
+}
+
+
+/*                  What                    */
+
+
+.what{
+    background-color: #626262;
+}
+.what .container{
+    width: 80%;
+}
+
+.what h2 , .cheap h2{
+    font-size: 65px !important;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    color: #6B6B6B;
+    padding-left: 45px;
+    padding-top: 25px;
+}
+.what h3{
+    font-size: 38px !important;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+}
+
+
+/*                  Cheap                   */
+
+.cheap{
+    background-color: #F7F7F7;
+    padding-top: 150px !important;
+}
+.cheap .cheapcaption h2{
+    color: #EAEAEA;
+}
+.cheap .num{
+    font-size: 55px;
+}
+
+.cheap .container{
+    width: 80%;
+}
+.cheap .card a{
+    background-color: var(--colorMain);
+    transition: all .3s;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 16px 20px !important;
+    
+}
+
+.cheap .card a:hover{
+    background-color: var(--colorHover);
+    transform: translate(0px,-1.5px);
+}
+
+.cheap .card{
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.05);
+    transition: all .2s;
+}
+
+.cheap .card:hover{
+    box-shadow: 0 0 65px rgba(0, 0, 0, 0.1);
+}
+
+
+.cheap .goldcard{
+    transform: scale(1.06);
+}
+
+.cheap .goldcard .cardnum{
+    color: var(--colorMain);
+}
+
+.cheap .goldcaption2{
+    background-color: var(--colorMain);
+}
+
+.cheap .mainspan{
+    font-size: 13px;
+}
+.cheap .mainspan1{
+    font-size: 12px;
+
+}
+
+
+
+
+
+
+
+/*                   Slider               */
+
+.slider{
+    background-color: #F7F7F7;
+    padding-bottom: 110px;
+}
+.slider .container{
+    width: 80%;
+    
+}
+
+.slidercontent img{
+    width: 120px;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    
+}
+.slidercontent{
+    width: 65%;
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.05);
+    
+}
+.slidercontent h3{
+    font-size: 24px;
+    font-weight: 700;
+    font-family: 'Poppins', sans-serif;
+}
+.slidercontent span{
+    font-size: 12px;
+    
+}
+.slider .slider-icons{
+    transition: all .3s;
+}
+.slider .slider-icons1 i , .slider .slider-icons2 i{
+    transition: all .4s;
+}
+
+.slider p{
+    color: #787878 !important;
+    line-height: 35px;
+}
+.slider .slider-icons1:hover i{
+    transform: translate(-5px,0px);
+    color: var(--colorMain) !important;
+}
+.slider .slider-icons2:hover i{
+    transform: translate(5px,0px);
+    color: var(--colorMain) !important;
+}
+
+.slider .slider-btn button{
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+    background-color:#DEDEDE;
+}
+.slider .carousel-indicators .active{
+    background-color: var(--colorMain);
+}
+
+
+.touch .touchtitle h2 {
+    font-size: 70px !important;
+    font-weight: 700;
+    color: #F2F2F2;
+    font-family: 'Poppins', sans-serif;
+}
+.touch .touchtitle h3 {
+    font-size: 38px !important;
+    font-weight: 700;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+
+
+.touch .row input{
+    padding: 15px 0px;
+    border-radius: 0;
+}
+.form-control:focus {   
+    border: 2px solid black !important;
+    box-shadow: transparent 0px 0px 0px 0rem !important;
+}
+.touch .textcontrol{
+    resize: none;
+    border-radius: 0;
+}
+
+.touch .btn{
+    background-color: var(--colorMain);
+    padding: 15px 30px !important;
+    color: white;
+    font-weight: bold;
+}
+
+.touch .btn:hover{
+    background-color: var(--colorHover);
+    transform: translate(0px,-2px);
+    
+}
+
+@media all and (max-width:575px){
+    .touch{
+        display: flex;
+        flex-direction: column;
+        
+    }
+    .touch .frame {
+        width: 100% !important;
+        height: 500px;
+    }
+    .touch .frame iframe{
+        width: 100%;
+        height: 100%;
+    }
+    .touch .container {
+        width: 100% !important;
+        margin: 0px !important;
+        max-width: 992px !important;      
+    }
+    .touch .container .row{
+        padding: 0px !important;
+    }
+    .touch .container .row .mediarow{
+        padding: 0px !important;
+    }
+    
+
+
+    .slider .sliderbtn{
+        display: none;
+    }
+    .slider .container{
+        width: 100%;
+        
+    }
+    .slider .container .slidercontent{
+        width: 100%;
+    }
+
+    .slider .slidercontent p br{
+        display: none;
+        line-height: 0px;
+    }
+
+    .cheap .goldcard{
+        transform: scale(1);
+    }
+
+
+    .what .container{
+        width: 100%;
+    }
+
+    .what .row{
+        text-align: center;
+    }
+
+    .what .correct{
+        text-align: left;
+        margin-top: -20px !important;
+
+    }
+    .what .whatcaption{
+        margin-left: 120px;
+    }
+    .whatmedia p br{
+        display: none;
+    }
+
+
+
+    .team .container{
+        width: 100%;
+    }
+
+
+
+    .home .btnslider{
+        display: none !important;
+    }
+
+    .home h1{
+        font-size: 65px;
+    }
+
+    .home .backimg{
+        background-position: 50%;
+
+    }
+
+
+    .navbar .container{
+        width: 100% !important;
+    }
+    .navbar{
+        background-color: white !important;
+    }
+    
+    .navbar .container span ,.navbar .container a ,.navbar .container i{
+        color: black !important;
+    }
+    
+   
+}
+
+@media all and (min-width:576px) and (max-width:767px){
+    .touch{
+        display: flex;
+        flex-direction: column;
+        
+    }
+    .touch .frame {
+        width: 100% !important;
+        height: 500px;
+    }
+    .touch .frame iframe{
+        width: 100%;
+        height: 100%;
+    }
+    .touch .container {
+        width: 100% !important;
+        margin: 0px !important;
+        max-width: 992px !important;      
+    }
+    .touch .container .row{
+        padding: 0px !important;
+    }
+    .touch .container .row .mediarow{
+        padding: 0px !important;
+    }
+
+
+    .slider .sliderbtn{
+        display: none;
+    }
+    .slider .container{
+        width: 100%;
+        max-width: 700px !important;
+        
+    }
+    .slider .container .slidercontent{
+        width: 100%;
+    }
+
+    .cheap .goldcard{
+        transform: scale(1);
+    }
+
+    .cheap .card{
+        width: 85%;
+        margin-left: 35px;
+    }
+
+    .what .container{
+        width: 100%;
+        max-width: 768px;
+    }
+
+    .what .row{
+        text-align: center;
+    }
+
+    .what .correct{
+        text-align: left;
+        margin-top: -20px !important;
+
+    }
+    
+    .whatmedia p br{
+        display: none;
+    }
+
+    .whatcaption h2{
+        transform: translate(50%,0);
+        left: 50% !important;
+        
+    }
+    
+    
+    .whatcaption h3{
+        transform: translate(50%,0);
+        left: 16% !important;
+        
+    }
+
+
+
+    .team .container{
+        width: 100%;
+        max-width: 700px;
+    }
+
+    .home .btnslider{
+        display: none !important;
+    }
+
+    .home h1{
+        font-size: 65px;
+    }
+
+    .home .backimg{
+        background-position: 50%;
+
+    }
+    .navbar .container{
+        width: 100% !important;
+        max-width: 768px;
+    }
+    .navbar{
+        background-color: white !important;
+    }
+    
+    .navbar .container span ,.navbar .container a , .navbar .container i{
+        color: black !important;
+    }
+}
+
+@media all and (min-width:768px) and (max-width:991px){
+    .touch{
+        display: flex;
+        flex-direction: column;
+        
+    }
+    .touch .frame {
+        width: 100% !important;
+        height: 500px;
+    }
+    .touch .frame iframe{
+        width: 100%;
+        height: 100%;
+    }
+    .touch .container {
+        width: 100% !important;
+        margin: 0px !important;
+        max-width: 992px !important;      
+    }
+    .touch .container .row{
+        padding: 0px !important;
+    }
+    .touch .container .row .mediarow{
+        padding: 0px !important;
+    }
+
+
+
+    .slider .sliderbtn{
+        display: none;
+    }
+    .slider .container{
+        width: 100%;
+        max-width: 800px !important;
+        
+    }
+    .slider .container .slidercontent{
+        width: 100%;
+    }
+
+    
+
+
+    .cheap .container{
+        width: 100%;
+        max-width: 768px;
+        
+    }
+    .cheap .goldcard{
+        transform: scale(1);
+    }
+    .whatmedia p br{
+        display: none;
+    }
+    .whatcaption h2{
+        transform: translate(50%,0);
+        left: 50% !important;
+        
+    }
+    
+    
+    .whatcaption h3{
+        transform: translate(50%,0);
+        left: 21% !important;
+        
+    }
+    .what .container{
+        width: 100%;
+        max-width: 850px;
+    }
+    .what .row{
+        text-align: center;
+    }
+
+    .correct{
+        text-align: left;
+    }
+
+    .team .container{
+        width: 100%;
+        max-width: 850px;
+    }
+    
+    .home .btnslider{
+        display: none !important;
+    }
+
+    .home h1{
+        font-size: 70px;
+    }
+
+    .home .backimg{
+        background-position: 50%;
+
+    }
+
+    .navbar .container{
+        width: 95% !important;
+        max-width: 992px;
+    }
+    .navbar{
+        background-color: white !important;
+    }
+    
+    .navbar .container span ,.navbar .container a ,.navbar .container i{
+        color: black !important;
+    }
+    
+
+
+
+
+
+}
+@media all and (min-width:992px) and (max-width:1200px){
+    .touch{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+        
+    }
+    .touch .frame {
+        width: 100% !important;
+        height: 500px;
+    }
+    .touch .frame iframe{
+        width: 100%;
+        height: 100%;
+    }
+    .touch .container {
+        width: 85% !important;
+        margin: 0px !important;
+        max-width: 992px !important;    
+    }
+    .touch .container .row{
+        padding: 0px !important;
+    }
+    .touch .container .row .mediarow{
+        padding: 0px !important;
+    }
+
+
+    
+    .slider .container{
+        width: 100%;
+        max-width: 850px !important;
+        
+    }
+    .slider .container .slidercontent{
+        width: 100%;
+    }
+    .slider .slider-icons1{
+        margin-right: 250px;
+    } 
+    .slider .slider-icons2{
+        margin-left: 250px;
+    } 
+
+
+    .cheap .container{
+        width: 100%;
+        max-width: 1100px;
+        
+    }
+
+    .what .container{
+        width: 100%;
+        
+    }
+    .what .row{
+        text-align: center;
+    }
+    .correct{
+        text-align: left;
+    }
+    .whatmedia p br{
+        display: none;
+    }
+
+
+    .team .container{
+        width: 100%;
+        max-width: 1100px;
+    }
+
+}
+@media all and (min-width:1200px){
+
+    .slider .container{
+        width: 100%;
+        max-width: 850px !important;
+        
+    }
+    .slider .container .slidercontent{
+        width: 100%;
+    }
+    
+    .slider .slider-icons1{
+        margin-right: 250px;
+    } 
+    .slider .slider-icons2{
+        margin-left: 250px;
+    } 
+    .cheap .container{
+        width: 90%;      
+        
+    }
+    .what .container{
+        width: 100%;
+        
+    }
+
+    .team .container{
+        width: 100%;
+        max-width: 1300px;
+    }
+}
+
+
+.close{
+    background-color: #00C3DA;
+    width: 500px;
+    height: 200px;
+}
